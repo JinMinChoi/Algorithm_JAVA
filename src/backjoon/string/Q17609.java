@@ -11,59 +11,47 @@ public class Q17609 {
 
         int n = Integer.parseInt(br.readLine());
 
+        StringBuilder sb = new StringBuilder();
+
         while ((n--) > 0) {
             String str = br.readLine();
 
-            int ans = pNum(str);
-
-            System.out.println(ans);
+            if (isP(str)) {
+                sb.append(0).append("\n");
+                continue;
+            } else if (isP2(str)) {
+                sb.append(1).append("\n");
+                continue;
+            } else sb.append(2).append("\n");
         }
+        System.out.println(sb.toString());
+
     }
 
-    private static int pNum(String str) {
-        int ret = 0;
-        int left = 0;
-        int right = str.length() - 1;
-
-        while (left <= right) {
-            if (str.charAt(left) == str.charAt(right)) {
-                left++;
-                right--;
-            } else {
-                int l = left;
-                int r = right;
-
-                l++;
-                while (l <= r) {
-                    if (str.charAt(l) == str.charAt(r)) {
-                        l++;
-                        r--;
-                    }
-                    else {
-                        ret++;
-                        break;
-                    }
-                }
-
-                l = left;
-                r = right;
-
-                r--;
-                while (l <= r) {
-                    if (str.charAt(l) == str.charAt(r)) {
-                        l++;
-                        r--;
-                    }
-                    else {
-                        ret++;
-                        break;
-                    }
-                }
-
-                return ret;
-
+    private static boolean isP(String str) {
+        int l = 0;
+        int r = str.length() - 1;
+        while (l <= r) {
+            if (str.charAt(l) != str.charAt(r)) {
+                return false;
             }
+            l++;
+            r--;
         }
-        return ret;
+        return true;
+    }
+
+    private static boolean isP2(String str) {
+        int l=0;
+        int r = str.length() - 1;
+
+        while (l <= r) {
+            if (str.charAt(l) != str.charAt(r)) {
+                return isP(str.substring(l + 1, r + 1)) || isP(str.substring(l, r));
+            }
+            l++;
+            r--;
+        }
+        return true;
     }
 }
