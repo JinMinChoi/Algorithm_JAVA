@@ -1,4 +1,4 @@
-package level.math;
+package backjoon.level.math;
 
 import java.io.BufferedReader;
 import java.io.IOException;

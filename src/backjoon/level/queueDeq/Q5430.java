@@ -1,4 +1,4 @@
-package level.queueDeq;
+package backjoon.level.queueDeq;
 
 import java.io.BufferedReader;
 import java.io.IOException;

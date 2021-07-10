@@ -1,4 +1,5 @@
-package level.dp;
+package backjoon.level.dp;
+
 
 import java.io.BufferedReader;
 import java.io.IOException;

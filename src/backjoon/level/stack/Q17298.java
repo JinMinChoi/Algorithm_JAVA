@@ -1,4 +1,5 @@
-package level.stack;
+package backjoon.level.stack;
+
 
 import java.util.Scanner;
 import java.util.Stack;

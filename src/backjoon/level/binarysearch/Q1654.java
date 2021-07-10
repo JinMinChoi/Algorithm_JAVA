@@ -1,5 +1,4 @@
-package level.binarysearch;
-
+package backjoon.level.binarysearch;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;

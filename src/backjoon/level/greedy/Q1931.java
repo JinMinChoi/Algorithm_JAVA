@@ -1,4 +1,4 @@
-package level.greedy;
+package backjoon.level.greedy;
 
 import java.io.BufferedReader;
 import java.io.IOException;

@@ -1,4 +1,4 @@
-package level.numbertheory;
+package backjoon.level.numbertheory;
 
 import java.util.Scanner;
 

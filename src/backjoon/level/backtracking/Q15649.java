@@ -1,4 +1,4 @@
-package level.backtracking;
+package backjoon.level.backtracking;
 
 import java.io.BufferedReader;
 import java.io.IOException;

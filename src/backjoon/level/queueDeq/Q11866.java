@@ -1,4 +1,5 @@
-package level.queueDeq;
+package backjoon.level.queueDeq;
+
 
 import java.util.LinkedList;
 import java.util.Queue;

@@ -1,4 +1,4 @@
-package level.stack;
+package backjoon.level.stack;
 
 import java.io.BufferedReader;
 import java.io.IOException;

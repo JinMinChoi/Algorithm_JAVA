@@ -1,4 +1,4 @@
-package level.priorityQueue;
+package backjoon.level.priorityQueue;
 
 import java.util.Comparator;
 import java.util.PriorityQueue;

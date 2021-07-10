@@ -1,4 +1,4 @@
-package level.sort;
+package backjoon.level.sort;
 
 import java.io.BufferedReader;
 import java.io.IOException;

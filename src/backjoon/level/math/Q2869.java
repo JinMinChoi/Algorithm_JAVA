@@ -1,4 +1,5 @@
-package level.math;
+package backjoon.level.math;
+
 
 import java.io.*;
 import java.util.StringTokenizer;

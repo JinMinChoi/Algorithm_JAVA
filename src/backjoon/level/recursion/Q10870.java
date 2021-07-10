@@ -1,4 +1,4 @@
-package level.recursion;
+package backjoon.level.recursion;
 
 import java.util.Scanner;
 

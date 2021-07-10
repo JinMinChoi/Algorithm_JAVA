@@ -1,4 +1,5 @@
-package level.dfsbfs;
+package backjoon.level.dfsbfs;
+
 
 import java.io.BufferedReader;
 import java.io.IOException;

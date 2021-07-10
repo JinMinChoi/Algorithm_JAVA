@@ -1,4 +1,4 @@
-package level.binarysearch;
+package backjoon.level.binarysearch;
 
 import java.util.Scanner;
 

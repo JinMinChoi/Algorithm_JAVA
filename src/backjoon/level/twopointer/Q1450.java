@@ -1,4 +1,4 @@
-package level.twopointer;
+package backjoon.level.twopointer;
 
 import java.io.BufferedReader;
 import java.io.IOException;

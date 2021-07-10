@@ -1,4 +1,5 @@
-package level.twopointer;
+package backjoon.level.twopointer;
+
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package level.shortestpath;
+package backjoon.level.shortestpath;
 
 import java.io.BufferedReader;
 import java.io.IOException;

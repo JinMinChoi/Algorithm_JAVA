@@ -1,4 +1,4 @@
-package level.devideconquer;
+package backjoon.level.devideconquer;
 
 import java.io.BufferedReader;
 import java.io.IOException;

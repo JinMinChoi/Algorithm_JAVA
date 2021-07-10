@@ -1,4 +1,4 @@
-package level.bruteForce;
+package backjoon.level.bruteForce;
 
 import java.io.BufferedReader;
 import java.io.IOException;
