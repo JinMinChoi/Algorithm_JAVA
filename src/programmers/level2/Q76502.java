@@ -4,8 +4,6 @@ package programmers.level2;
 import java.util.Stack;
 
 public class Q76502 {
-    static String left = "([{";
-    static String right = ")]}";
 
     public static void main(String[] args) {
         String s = "[)(]";
