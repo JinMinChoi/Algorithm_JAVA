@@ -1,3 +1,4 @@
+//https://programmers.co.kr/learn/courses/30/lessons/83201
 package programmers.weekly;
 
 public class Q_2주차 {
