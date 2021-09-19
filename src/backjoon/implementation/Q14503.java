@@ -9,7 +9,6 @@ import java.util.StringTokenizer;
 public class Q14503 {
     private static int N, M;
     private static int[][] map;
-    private static final int CLEANED = 2;
     private static int[] dx = {-1, 0, 1, 0};
     private static int[] dy = {0, 1, 0, -1};
     private static int r, c;
@@ -41,14 +40,13 @@ public class Q14503 {
     }
 
     private static void clean(int x, int y, int dir) {
-        // 1. 현재 위치를 청소한다.
+        // 청소
         if (map[x][y] == 0) {
             map[x][y] = 2;
             cnt++;
-            printMap();
         }
 
-        // 2. 왼쪽방향부터 차례대로 탐색을 진행한다.
+        // 왼쪽방향 탐색
         boolean flag = false;
         int initDir = dir;
         for (int i = 0; i < 4; i++) {
@@ -57,7 +55,7 @@ public class Q14503 {
             int nextY = y + dy[nextDir];
 
             if (isScope(nextX, nextY)) {
-                if (map[nextX][nextY] == 0) {   // 아직 청소하지 않은 공간이라면
+                if (map[nextX][nextY] == 0) {
                     clean(nextX, nextY, nextDir);
                     flag = true;
                     break;
@@ -66,7 +64,7 @@ public class Q14503 {
             dir = (dir + 3) % 4;
         }
 
-        // 네 방향 모두 청소가 되어있거나 벽인 경우 => 후진
+        // 후진
         if (!flag) {
             int backDir = (initDir + 2) % 4;
             int backX = x + dx[backDir];
@@ -82,15 +80,5 @@ public class Q14503 {
 
     private static boolean isScope(int x, int y) {
         return x >= 0 && y >= 0 && x < N && y < M;
-    }
-
-    private static void printMap() {
-        for (int i = 0; i < N; i++) {
-            for (int j = 0; j < M; j++) {
-                System.out.print(map[i][j] + " ");
-            }
-            System.out.println();
-        }
-        System.out.println();
     }
 }
