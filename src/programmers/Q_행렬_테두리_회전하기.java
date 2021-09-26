@@ -69,7 +69,6 @@ public class Q_행렬_테두리_회전하기 {
                 curX = nextX;
                 curY = nextY;
             }
-            printArr();
         }
 
         arr[curX][curY + 1] = temp;
