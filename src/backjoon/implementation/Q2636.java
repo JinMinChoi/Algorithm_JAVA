@@ -12,7 +12,7 @@ public class Q2636 {
     private static int n, m;
     private static int[][] map;
     private static boolean[][] visit;
-    private static int cheezeCnt, cnt, lastCheeze;
+    private static int cheeseCnt, cnt, lastCheese;
     private static int[] dx = {-1, 0, 1, 0};
     private static int[] dy = {0, 1, 0, -1};
 
@@ -29,18 +29,18 @@ public class Q2636 {
             for (int j = 0; j < m; j++) {
                 map[i][j] = Integer.parseInt(line[j]);
                 if (map[i][j] == 1) {
-                    cheezeCnt++;
+                    cheeseCnt++;
                 }
             }
         }
 
-        while (cheezeCnt != 0) {
+        while (cheeseCnt != 0) {
             cnt++;
-            lastCheeze = cheezeCnt;
+            lastCheese = cheeseCnt;
             bfs();
         }
 
-        System.out.println(cnt + "\n" + lastCheeze);
+        System.out.println(cnt + "\n" + lastCheese);
 
     }
 
@@ -62,7 +62,7 @@ public class Q2636 {
 
                 if (map[nextX][nextY] == 1) {
                     map[nextX][nextY] = 0;
-                    cheezeCnt--;
+                    cheeseCnt--;
                 } else {
                     q.add(new Pos(nextX, nextY));
                 }
