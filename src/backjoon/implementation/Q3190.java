@@ -73,12 +73,6 @@ public class Q3190 {
         return false;
     }
 
-    private static void printDq() {
-        for (Pos pos : dq) {
-            System.out.println(pos.x + " " + pos.y);
-        }
-    }
-
     private static int convertDir(int dir, String newDir) {
         int temp = dir;
         if (newDir.equals("D")) {
