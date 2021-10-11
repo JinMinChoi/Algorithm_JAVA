@@ -35,5 +35,4 @@ public class Q7490 {
         dfs(depth + 1, sum + (sign * num), depth + 1, -1, str + "-" + (depth + 1));
 
     }
-
 }
