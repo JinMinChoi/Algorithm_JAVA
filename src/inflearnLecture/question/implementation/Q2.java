@@ -1,4 +1,4 @@
-package inflearnLecture.question;
+package inflearnLecture.question.implementation;
 
 import java.util.Scanner;
 
