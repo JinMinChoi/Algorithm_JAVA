@@ -56,10 +56,11 @@ public class Q86 {
     }
 
     private static int getMin(int[] openPizza) {
-        int min = Integer.MAX_VALUE;
         int sum = 0;
 
         for (Pos house : houses) {
+            int min = Integer.MAX_VALUE;
+
             for (int openPizzaIdx : openPizza) {
                 Pos pos = pizzas.get(openPizzaIdx);
 
@@ -67,7 +68,6 @@ public class Q86 {
                 min = Math.min(min, distance);
             }
             sum += min;
-            min = Integer.MAX_VALUE;
         }
         return sum;
     }
